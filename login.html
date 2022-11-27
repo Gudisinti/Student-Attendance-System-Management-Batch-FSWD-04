@@ -1,0 +1,92 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/6.2.0/css/all.min.css">
+<style>
+body{
+background-image: url('https://tse1.mm.bing.net/th?id=OIP.evUMYFwlMncUnlz-sqBP5wHaEo&pid=Api&P=0');
+background-size:cover;
+}
+.form-box{
+background-color:slateblue;
+text-align:center;
+width:450px;
+height:200px;
+margin:12% auto;
+padding:80px 0;
+color:white;
+margin-top: 110px;
+}
+h1{
+text-align:center;
+margin-top:1px;
+bottom: auto;
+}
+.input-box{
+margin-top:31px auto;
+width:80%;
+margin-left: 36px;
+border-bottom:2px solid white;
+padding:8px;
+}
+.input-box input{
+font-size:small;
+width:80%;
+border:none;
+outline:none;
+background:transparent;
+color:white;
+}
+::placeholder{
+color:#ccc;
+}
+.fa{
+margin-left:1px;
+color:white;
+} 
+button{
+color:white;
+position: center;
+width: 80px;
+height: 30px;
+margin-top:50px;
+border: 1px solid white;
+cursor: pointer;
+outline: none;
+background: transparent;
+}
+</style>
+</head>
+<body>
+<h1>STUDENT ATTENDANCE MANAGEMENT SYSTEM</h1>
+<div class="form-box">
+<h1>Login</h1><br>
+<i class="fa fa-envelope-o"></i>
+<div class="input-box">
+<i class="fa fa-user"></i>
+<input type="email" placeholder="User Id" id="2022101">
+</div>
+<div class="input-box">
+<i class="fa fa-key"></i>
+<input type="password" placeholder="Password" id="1234">
+</div>
+<a href="attendance.html">
+<button type= "button" name="log" id="logButton" value="Login"
+onclick="myFunction()">LOGIN</button>
+</a>
+<script>
+function myFunction(){
+var ui = document.documentElement["form-box"]["user id"].Value;
+var pw = document.documentElement["form-box"]["password"].Value;
+if(ui=='2022101' && pw=="1234")
+{
+window.location.href="attendance.html";
+}
+else{
+{
+alert("Ivalid User Id and Password"); 
+} 
+}
+}
+</script>
+</body>
+</html>
